@@ -1,0 +1,4 @@
+./dist
+./package-lock.json
+./taskpane.html
+node_modules
