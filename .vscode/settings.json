@@ -1,0 +1,16 @@
+{
+    "eslint.validate": [
+      "javascript",
+      "javascriptreact",
+      "typescript"
+    ],
+    "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/dist": false,
+      "**/.DS_Store": true,
+      "**/Thumbs.db": true
+    }
+  }
+  
