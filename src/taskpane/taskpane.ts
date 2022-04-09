@@ -1,7 +1,8 @@
 Office.onReady((info) => {
-    if (info.host === Office.HostType.PowerPoint) {
-        document.getElementById("app-body").style.display = "block";
-        document.getElementById("app-body").onclick = processClick;
+    if (info.host === Office.HostType.PowerPoint) 
+    {
+        document.getElementById("app-body").onclick = processIconClick;
+        document.getElementById("info-button").onclick = processInfoButton;
     }
 });
 
@@ -74,7 +75,7 @@ async function processSvg(data: string, label: string): Promise<string>
     return serializer.serializeToString(xmlDoc);
 }
 
-export async function processClick() 
+export async function processIconClick() 
 {
     let event = window.event;
     let combo = <HTMLSelectElement>document.getElementById("icon-size");
@@ -94,13 +95,28 @@ export async function processClick()
             imageTop: position 
         };
 
-        // await Office.context.document.setSelectedDataAsync(data, { coercionType: Office.CoercionType.Text });
-
         await Office.context.document.setSelectedDataAsync(data, options);
 
         position += iconsize / 2;
 
         if (position > 450)
           position = 50;
+    }
+}
+
+export async function processInfoButton() 
+{
+    var icons = document.getElementById("icons");
+    var faq = document.getElementById("faq");
+
+    if (faq.style.display == "block")
+    {
+        icons.style.display = "block";
+        faq.style.display = "none";
+    }
+    else
+    {
+        icons.style.display = "none";
+        faq.style.display = "block";
     }
 }

@@ -1,5 +1,7 @@
 # ppt-azure-icons
-Powerpoint add-in: Azure Icons
+Powerpoint add-in with a gallery of the official Azure Icons
+
+![Screenshot](Screenshot.png)
 
 ## Project installation
 For working with this project, it is needed
@@ -20,4 +22,6 @@ After building for the first time and executing the default task, open a termina
 ## Icon source
 The icons were downloaded from the official Microsoft page: https://docs.microsoft.com/en-us/azure/architecture/icons/ 
 
-The current update date is January 21 (version 4), and the icons will be updated as new releases arrive.
+The current update date is January 2021 (version 4), and the icons will be updated as new releases arrive.
+
+## How to install the add-in
