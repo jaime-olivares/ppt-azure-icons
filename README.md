@@ -16,3 +16,8 @@ For installing the npm packages, open a terminal and type `npm install`
 It will also require to manually run the prebuild script: `node prebuild.js`. That will create the file `taskpane.html`
 
 After building for the first time and executing the default task, open a terminal and type `npm start`. That will launch PowerPoint showing the add-in icon.
+
+## Icon source
+The icons were downloaded from the official Microsoft page: https://docs.microsoft.com/en-us/azure/architecture/icons/ 
+
+The current update date is January 21 (version 4), and the icons will be updated as new releases arrive.
