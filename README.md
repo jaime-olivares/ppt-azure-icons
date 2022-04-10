@@ -25,3 +25,4 @@ The icons were downloaded from the official Microsoft page: https://docs.microso
 The current update date is January 2021 (version 4), and the icons will be updated as new releases arrive.
 
 ## How to install the add-in
+Still determining how to deploy for public availability in AppSource. It seems individuals are not allowed.
